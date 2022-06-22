@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+   <table>
+      <tr>
+        <td>회원번호</td>
+        <td><input type="text" placeholder="회원번호" onfocus="this.placeholder="onblur="this.placeholder='회원번호'"></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="text" placeholder="비밀번호" onfocus="this.placeholder="onblur="this.placeholder='회원번호'"></td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td>
+          <input type="checkbox" name="sex">남
+          <input type="checkbox" name="sex">여
+        </td>
+      </tr>  
+      <tr>
+        <td>사진</td>
+        <td><input type="file">
+      </tr> 
+      <tr>
+        <td>직업</td>
+        <td>
+          <input type="radio" name="job">백수
+          <input type="radio" name="job">개발자
+          <input type="radio" name="job">디자이너
+        </td>
+      </tr>
+      <tr>
+        <td>거주지역</td>
+        <td>
+          <select name="place" id="place">
+            <option value="서울">서울</option>
+            <option value="대전">대전</option>
+            <option value="대구">대구</option>
+            <option value="부산">부산</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text"><br><br><br>
+        </td>  
+      </tr>  
+   </table> 
+</body>
+</html>

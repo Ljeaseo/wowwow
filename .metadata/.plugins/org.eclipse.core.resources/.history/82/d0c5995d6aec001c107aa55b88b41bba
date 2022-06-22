@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+p {
+	font-family: 'IBMPlexSansKR-Thin', sans-serif;
+	
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css"
+	href="C:\Users\GreenArt\Desktop\wowwow\html\WebContent\css/css_try.css">
+</head>
+<body>
+   <table class="a">
+     <tr>
+      <td>나라</td>
+      <td>대한민국</td>
+      <td>중국</td>
+      <td>일본</td>
+      <td>북한</td>
+     </tr>
+     <tr>
+      <td>금</td>
+      <td>12</td>
+      <td>16</td>
+      <td>1</td>
+      <td>2</td>
+     </tr>     
+     <tr>
+      <td>은</td>
+      <td>23</td>
+      <td>67</td>
+      <td>89</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>동</td>
+      <td>18</td>
+      <td>43</td>
+      <td>106</td>
+      <td>4</td>
+     </tr>
+     <tr>
+      <td>종합순위</td>
+      <td>8</td>
+      <td>2</td>
+      <td>38</td>
+      <td>26</td>
+     </tr>
+    
+    </table>
+</body>
+</html>

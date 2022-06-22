@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="C:\Users\GreenArt\Desktop\wowwow\html\WebContent\css/css_ex24.css">
+</head>
+<body>
+	<div id="all">
+		<div id="header">
+		   <div>1</div>
+		   <div>1</div>
+		</div>
+		<div id="main">
+		   <div>
+		      <div>1</div>
+		   </div>
+		   <div>
+		      <div>1</div>
+		      <div>1</div>
+		      <div>1</div>
+		      <div>1</div>
+		      <div>1</div> s
+		   </div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

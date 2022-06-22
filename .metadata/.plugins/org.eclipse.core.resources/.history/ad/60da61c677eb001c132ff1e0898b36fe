@@ -1,0 +1,8 @@
+@charset "UTF-8";
+table, tr, td{
+	border :1px solid White;
+	border-collapse: collapse;
+	}
+.a{
+	background-color:grey;
+	}

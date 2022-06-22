@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+h1{
+	text-align:center;
+}
+body{
+	background-image:url("..\css/다운로드.jpg");
+	background-repeat:no-repeat;
+	background-position:center cneter;
+}

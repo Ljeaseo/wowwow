@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.header {
+	background-color: orange;
+	padding: 20px;
+	text-align: center;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: skyblue;
+}

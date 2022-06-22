@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	text-align:left;
+}
+#t1{
+	vertical-align:right;
+}
+#hp{
+	vertical-align:bottom;
+}
+#full {
+	width: 1024px;
+	margin: 0 auto;
+	background-color: yellow;
+}
+
+#header {
+	background-color: gray;
+	margin-top: 5px;
+}
+
+#main {
+	background-color: blue;
+	margin-top: 5px;
+	box-position:absolute;
+}
+
+#main-L {
+	background-color: green;
+	width: 500px;
+	float: left;
+	magin-bottom: 5px;
+	
+}
+
+#main-R {
+	background-color: pink;
+	width: 500px;
+	float: right;
+	magin-bottom: 5px;
+}
+
+#footer {
+	background-color: black;
+	clear: both;
+	margin-top: 5px;
+}

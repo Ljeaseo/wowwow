@@ -1,0 +1,10 @@
+@charset "UTF-8";
+#a{
+	text-shadow:4px 4px grey;
+}
+#b{
+	text-shadow:4px 4px 4px;
+}
+#c{
+	text-shadow:-4px -4px 4px red;
+}

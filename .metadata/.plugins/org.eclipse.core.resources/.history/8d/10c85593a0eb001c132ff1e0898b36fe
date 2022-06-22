@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#full {
+	width: 1024px;
+	margin: 0 auto;
+	border-color: solid 1px black;
+}
+
+#header {
+	background-color: gray;
+
+	
+}
+
+#main {
+	background-color: blue;
+
+}
+
+#main-L {
+	background-color: green;
+    width:500px;
+    float:left;
+}
+
+#main-R {
+	background-color: pink;
+    width:500px;
+    float:right;
+}
+#footer {
+	background-color: black;
+	clear:both;
+}

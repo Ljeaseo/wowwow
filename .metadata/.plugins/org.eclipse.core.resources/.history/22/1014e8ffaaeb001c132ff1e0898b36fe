@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="C:\Users\GreenArt\Desktop\wowwow\html\WebContent\css/css_ex23.css">
+</head>
+<body>
+	<h1>소년 가장의 블로그</h1>
+	<p>철부지 자취생의 세상 사는 이야기</p>
+	<ul>
+		<li><a href="#">블로그 설정</a></li>
+		<li><a href="#">블로그 설정</a></li>
+		<li><a href="#">블로그 설정</a></li>
+		<li><a href="#">블로그 설정</a></li>
+		<li><a href="#">블로그 설정</a></li>
+	</ul>
+	회원번호
+	<input type="text">
+	<br> 비밀번호
+	<input type="password">
+	<br>
+	<button type="submit" class="btnLogin">로그인</button>
+	<button type="submit" class="btnjoin">회원가입</button>
+    <p>독자를 위한 출판사</p>
+    <img src="C:\Users\GreenArt\Desktop\wowwow/캡쳐1.png">
+</body>
+</html>

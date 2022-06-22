@@ -1,0 +1,7 @@
+@charset "UTF-8";
+p{
+	background-color:yellow;
+	border-color:blue;
+	boeder-width:10px;
+	border-style:solid;
+}
