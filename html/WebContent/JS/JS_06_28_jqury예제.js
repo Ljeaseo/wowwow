@@ -76,13 +76,35 @@
 //     });
 // });
 //================================================================================
-$(document).ready(function(){
-    $("input[type='button']").click(function() {
-        let arr ="#wr_3"
+// $(document).ready(function(){
+//     // $("button").on("click",function(){
+//     //     let sum=parseInt($("#wr_1").val())+parseInt($("#wr_2").val())
         
-        $('#wr_1, #wr_2').on('change', function() {
-            $('#wr_3').val( Number($('#wr_1').val()) + Number($('#wr_2').val()) )
-            $("text").text(arr);
-        }); 
-    })
-})
+           
+//     //     $("#wr_3").val(sum);
+//     // })
+   //---------------------------------------------------------------------------------
+//     $("select").on("click",function(){
+//         var num1 = Number($("#select_box").val())
+//         var num2 = Number($("#money").val())
+      
+//         $("span").html(num1*num2)
+//     })
+
+
+// })
+
+$(document).ready(function(){
+
+    
+    $("button").click(function(){
+      let str = 0;
+      
+  $("input[type='checkbox']:checked").each(function(){ 
+      str += parseInt($(this).val());
+  $('#answer').html(str); 
+});
+   
+
+   })
+  })

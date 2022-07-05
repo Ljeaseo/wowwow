@@ -5,6 +5,48 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch java_class_0705_연습문제",
+            "request": "launch",
+            "mainClass": "java_class_0705_연습문제",
+            "projectName": "wowwow_65c95379"
+        },
+        {
+            "type": "java",
+            "name": "Launch java_class_0705",
+            "request": "launch",
+            "mainClass": "java_class_0705",
+            "projectName": "wowwow_65c95379"
+        },
+        {
+            "type": "java",
+            "name": "Launch java_class_0704_연습문제",
+            "request": "launch",
+            "mainClass": "java_class_0704_연습문제",
+            "projectName": "wowwow_65c95379"
+        },
+        {
+            "type": "java",
+            "name": "Launch java_class_0704",
+            "request": "launch",
+            "mainClass": "java_class_0704",
+            "projectName": "wowwow_65c95379"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch java_class_0701",
+            "request": "launch",
+            "mainClass": "java_class_0701",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
