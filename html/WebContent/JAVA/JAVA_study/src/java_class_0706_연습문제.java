@@ -5,40 +5,40 @@ public class java_class_0706_01 {
        
         //1.for문을 이용하여 1~100까지의 정수 중에서 3의 배수의 총합을 구하는 코드를 작성해보자.
 
-        // int sum = 0;
+        int sum = 0;
         
         
-        // for(int i=1;i<100;i++){
+        for(int i=1;i<100;i++){
              
-        //     if(i%3==0){
+            if(i%3==0){
                 
-        //         sum += i;
+                sum += i;
                 
-        //     }
-        // }
+            }
+        }
         
-        // System.out.println(sum);
+        System.out.println(sum);
 
         //2. while문과 Math.random()메소드를 이용해서 두개의 주사위를 던졌을때 
         //나오는 눈이 아래의 형태로 출력하고, 눈의 합이 5가 아니면 계속 주사위를 던지고,
         //눈의 합이 5이면 실행을 멈추는 코드를 작성해보자.
 
         
-        // int sum = 0;
+        int sum = 0;
 
         
-        // while(true){
+        while(true){
             
-        //     int num1 = (int)(Math.random()*6) + 1;
-        //     int num2 = (int)(Math.random()*6) + 1;
-        //     System.out.println((num1)+"+"+(num2));
-        //     sum=num1+num2;
-        //     System.out.println(sum);    
+            int num1 = (int)(Math.random()*6) + 1;
+            int num2 = (int)(Math.random()*6) + 1;
+            System.out.println((num1)+"+"+(num2));
+            sum=num1+num2;
+            System.out.println(sum);    
 
-        //     if(sum == 5){
-        //         break;
-        //     }    
-        // }
+            if(sum == 5){
+                break;
+            }    
+        }
         
         
         //3. 거스름돈을 몇개의 동전으로 지불할 수 있는지를 계산하는 문제이다
@@ -49,7 +49,7 @@ public class java_class_0706_01 {
         
         
         Scanner sc = new Scanner(System.in); 
-        /*
+        
         System.out.println("잔돈을 입력하세요.");
         int money = sc.nextInt();
         int c10000, c5000, c1000, c500, c100, c50, c10;
@@ -89,26 +89,26 @@ public class java_class_0706_01 {
 
         money=money%10;
         
-        */
+        
         //4. 약수를 모두 찾는 수학 문제를 풀다가 지친 x는 컴퓨터의 도움을
         //받아 풀어보기로 하였다. 
 
-        // System.out.println("약수를 구할 숫자를 입력하세요.");
+        System.out.println("약수를 구할 숫자를 입력하세요.");
         
-        // int num = sc.nextInt();
-        // int nums = 0;
-        //     for(int i=1; i<=num; i++){
+        int num = sc.nextInt();
+        int nums = 0;
+            for(int i=1; i<=num; i++){
             
         
-        //     if(num%i==0){
-        //         System.out.println(i);
-        //     nums++;
-        //     }
-        // } 
-        // System.out.println("약수의 갯수는"+nums+"개입니다.");
+            if(num%i==0){
+                System.out.println(i);
+            nums++;
+            }
+        } 
+        System.out.println("약수의 갯수는"+nums+"개입니다.");
         
         //5. 홀수와 짝수의 개수를 구하는 프로그램을 만들어라.\\
-        /* 
+         
         int[] num1 = {3,4,5,6,7};
         int[] num2 = {12,16,22,24,29};
         int[] num3 = {41,43,45,47,49};
@@ -155,7 +155,7 @@ public class java_class_0706_01 {
         System.out.println("짝수는"+num3짝수+"개입니다.");
         System.out.println("홀수는"+num3홀수+"개입니다.");
         
-*/
+
         //6.컴퓨터가 생각한 숫자 맞추기
 
         /*
