@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Study_exTest_01",
+            "request": "launch",
+            "mainClass": "StudyEx01.Study_exTest_01",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculatorTest",
+            "request": "launch",
+            "mainClass": "Calculator.CalculatorTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch TireTest",
+            "request": "launch",
+            "mainClass": "Tire.TireTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch java_class_0705_연습문제",
             "request": "launch",
             "mainClass": "java_class_0705_연습문제",

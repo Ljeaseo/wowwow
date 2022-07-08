@@ -1,3 +1,4 @@
+package study_group;
 
 
 import java.util.Scanner;
