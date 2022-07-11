@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MemberTest",
+            "request": "launch",
+            "mainClass": "Member.MemberTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConstructorExTest",
+            "request": "launch",
+            "mainClass": "Constructor_Ex.ConstructorExTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Study_exTest_01",
             "request": "launch",
             "mainClass": "StudyEx01.Study_exTest_01",
