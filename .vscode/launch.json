@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exam",
+            "request": "launch",
+            "mainClass": "Exam",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch MemberTest",
             "request": "launch",
             "mainClass": "Member.MemberTest",
