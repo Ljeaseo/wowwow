@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch healthTest",
+            "request": "launch",
+            "mainClass": "Health.healthTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch EntryTest",
+            "request": "launch",
+            "mainClass": "entryEx.EntryTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch SuperTest",
+            "request": "launch",
+            "mainClass": "inheritance.SuperTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch TvTest",
+            "request": "launch",
+            "mainClass": "inheritance.TvTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch program",
+            "request": "launch",
+            "mainClass": "program",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Exam",
             "request": "launch",
             "mainClass": "Exam",

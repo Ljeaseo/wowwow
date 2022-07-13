@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-public class java_class_0706 {
+public class java_class_Array {
     public static void main(String[] args)  {
         //=====배열=====//
         

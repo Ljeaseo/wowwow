@@ -1,0 +1,68 @@
+1. 다음 프로그램을 완성하시오
+
+(1)부모클래스 : Entry
+   필드명 : String word;
+   메소드 : Entry();
+            Entry(String w);                       
+            public void writeView();               //약어출력
+
+(2)자식클래스 : SubEntry   (Entry를 상속받음)
+   필드명 : String definition; 
+            int year;
+   메소드 : SubEntry(String w);                 
+            SubEntry(String w, String d, int y);  //SubEntry(String w)호출
+            public void printView();              //원어, 시기출력
+
+(3)main()함수가 있는 클래스에서
+    new SubEntry("OOP","Object Oriented Programming", 1991);
+
+
+(4)출력
+
+*****약어사전******
+약어 : OOP
+원어 : Object Oriented Programming
+시기 : 1991년
+
+2. 다음 프로그램을 완성하시오
+
+(1)Super클래스명 : Health
+   필드명 : char gender(성별)
+            double tall (신장)
+            double weight(체중)
+   생성자 : Health() - 초기화
+   메서드 : input() - 성별, 신장, 체중입력받기
+            output1() - 출력
+
+(2)SubHealth클래스 에서 Health를 상속받음
+   필드명 : double s_weight (표준체중)
+            double fat      (비만도)
+            String result   (결과값)
+   생성자 : s_weight = 0.0; (초기화작업)
+            fat = 0.0;
+            result = null;
+   메소드 : calculate() - 비만도 계산
+            output2()  - 출력
+
+(3) ★표준체중계산법★
+    남성 : 표준체중 = (신장-100)*0.9
+    여성 : 표준체중 = (신장-100)*0.85
+
+    비만도 = 현재체중(Kg)/표준체중(Kg)*100
+    --------------------------------------------------
+    90%이하  : 저체중               121-130% : 경도비만
+    91 -110% : 정상(표준체중)       131-150% : 중도비만
+    111-120% : 과체중               150%     : 고도비만
+
+(4)출력
+
+   ***** 비만도 Check *****
+   성별(M/F) : M          <---남(M) / 여(F)
+   신장(Cm) : 175.3
+   체중(Kg)  : 95.45
+
+   성별 - M 
+   신장 - 175.3Cm
+   체중 - 95.45Kg
+
+   당신은 비만도 140.84이고,  중도비만 입니다.

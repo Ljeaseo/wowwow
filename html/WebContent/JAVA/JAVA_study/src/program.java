@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class 20220712_프로그래밍언어응용_이재서 {
+public class program {
     public static void main(String[] args)  {
         Scanner sc = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class 20220712_프로그래밍언어응용_이재서 {
             System.out.println("-------------------------------------------");
             System.out.println("1.학생수|2.점수입력|3.점수리스트|4.분석|5.종료");
             System.out.println("-------------------------------------------");
-            System.out.println("선택>");
+            System.out.print("선택>");
             int choice = sc.nextInt();
 
             if (choice == 1) {
