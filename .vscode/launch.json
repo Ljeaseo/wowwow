@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch bankappTest",
+            "request": "launch",
+            "mainClass": "bankapplication.bankappTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest",
+            "request": "launch",
+            "mainClass": "account.AccountTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch TimeTest",
+            "request": "launch",
+            "mainClass": "AccessModifierTime.TimeTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch healthTest",
             "request": "launch",
             "mainClass": "Health.healthTest",

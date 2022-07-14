@@ -72,6 +72,15 @@ public class ObjectArrayTest {
     3. 반환타입은 고려하지않음        반환타입이 같아야함    
         -super. / super()
     2. 캡슐화
+
+       public > protected > default > private
+
+       public : 접근에 대한 제한이 없음
+       protected : 동일한 패키지 내에 존재하거나 
+                   상속을 통해서만 접근 가능
+       default : 동일한 패키지 내에서만 접근
+                 (아무런 접근제어자를 명시하지 않으면 default)
+       private : 자기 자신의 클래스 내에서만 접근
     3. 다형성
         
     */

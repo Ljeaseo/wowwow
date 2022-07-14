@@ -7,8 +7,8 @@ public class healthTest {
         
         System.out.println("*****비만도 Check*****");
         sh.input();
-        sh.output1();
-        sh.calculate();
         sh.output2();
+        sh.calculate();
+        sh.output1();
     }
 }
