@@ -1,7 +1,7 @@
 package account;
 
 public class Account {
-    private int balance; // 잔고
+    private int balance; // 잔고변수(Account클래스에서만 접근할 수 있는 인스턴스 변수)
 
     Account(int balance){
         setBalance(balance);
@@ -23,13 +23,6 @@ public class Account {
         }
     }
 
-    public String getAno() {
-        return null;
-    }
-
-    public String getOwner() {
-        return null;
-    }
 }
     
    

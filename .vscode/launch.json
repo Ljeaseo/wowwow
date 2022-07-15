@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Collection",
+            "request": "launch",
+            "mainClass": "collection_0715.Collection",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProBuyTest",
+            "request": "launch",
+            "mainClass": "product_0715.ProBuyTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
+            "name": "Launch PeopleTest",
+            "request": "launch",
+            "mainClass": "people_0715.PeopleTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch bankappTest",
             "request": "launch",
             "mainClass": "bankapplication.bankappTest",
