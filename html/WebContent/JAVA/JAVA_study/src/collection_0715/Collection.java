@@ -1,6 +1,7 @@
 package collection_0715;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Collection {
@@ -32,6 +33,7 @@ public class Collection {
     */
         
         //동적배열
+        /*
         ArrayList<Integer> al = new ArrayList<>();   //Integer 정수만 저장
         
         al.add(10);
@@ -62,6 +64,42 @@ public class Collection {
             System.out.println(als.get(i).name);
             System.out.println(als.get(i).sum);
         }
+        */
+
+        //HashMap<key,value>map = new HashMap();
+
+        //HashMap<Integer,String> map = new HashMap<>();
+
+        // HashMap 값 추가 
+        //map.put(1, "java");
+        //map.put(1, "c");
+        //map.put(1, "c++");
+
+        //System.out.println(map.get(1));
+        //System.out.println(map.get(2));
+        //System.out.println(map.get(3));
+
+        HashMap<Integer,Student>map2 = new HashMap<>();
+        Student stu2 = new Student();
+        stu2.name="정자바";
+        stu2.sum=100;
+        map2.put(1,stu2);
+        stu2 = new Student();
+        stu2.name="홍길동";
+        stu2.sum=95;
+        map2.put(1,stu2);
+        stu2 = new Student();
+        stu2.name="최씨샾";
+        stu2.sum=90;
+        map2.put(1,stu2);
+
+        System.out.println(map2.get(1).name);
+        System.out.println(map2.get(1).sum);
+        
+        System.out.println(map2.get(2).name);
+        System.out.println(map2.get(2).sum);
     
+        System.out.println(map2.get(3).name);
+        System.out.println(map2.get(3).sum);
     }
 }

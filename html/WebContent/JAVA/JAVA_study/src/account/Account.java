@@ -23,6 +23,14 @@ public class Account {
         }
     }
 
+    public String getAno() {
+        return null;
+    }
+
+    public String getOwner() {
+        return null;
+    }
+
 }
     
    

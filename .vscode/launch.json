@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exception",
+            "request": "launch",
+            "mainClass": "Exception_0718.Exception",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Collection",
             "request": "launch",
             "mainClass": "collection_0715.Collection",

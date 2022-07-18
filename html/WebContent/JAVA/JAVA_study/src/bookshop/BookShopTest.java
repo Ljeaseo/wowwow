@@ -8,6 +8,6 @@ public class BookShopTest {
         ob.setAuthor("송JP");
         ob.setPrice(3500);
 
-        System.out.print(ob.viewBook(););
+        System.out.println();
     }
 }

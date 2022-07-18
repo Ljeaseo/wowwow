@@ -27,9 +27,9 @@ public class bankappTest {
 				withdraw();
 			} else if (selectNo == 5) {
 				play = false;
+                System.out.println("프로그램 종료");
 			}
 		}
-		System.out.println("프로그램 종료");
             
         }
         
