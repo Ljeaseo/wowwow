@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch majorTest",
+            "request": "launch",
+            "mainClass": "Studygroup_0719.majorTest",
+            "projectName": "wowwow_fa2463a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Exception",
             "request": "launch",
             "mainClass": "Exception_0718.Exception",

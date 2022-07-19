@@ -67,9 +67,9 @@ public class bankappTest {
         for(int i = 0 ; i < accountArray.length; i++){
             if(accountArray[i] == null){
                 
+                System.out.println
+                (accountArray[i].getAno() + "\t" + accountArray[i].getOwner() + "\t" + accountArray[i].getBalance());
             }
-            System.out.println
-            (accountArray[i].getAno() + "\t" + accountArray[i].getOwner() + "\t" + accountArray[i].getBalance());
         }
 
     }

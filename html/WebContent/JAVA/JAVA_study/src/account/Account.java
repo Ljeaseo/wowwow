@@ -1,6 +1,7 @@
 package account;
 
 public class Account {
+    public static Object st;
     private int balance; // 잔고변수(Account클래스에서만 접근할 수 있는 인스턴스 변수)
 
     Account(int balance){
@@ -8,6 +9,9 @@ public class Account {
     }
 
     public Account(String ano, String owner, int money) {
+    }
+
+    public Account(String class1, int grade, int stno) {
     }
 
     public int getBalance() {    
@@ -28,6 +32,26 @@ public class Account {
     }
 
     public String getOwner() {
+        return null;
+    }
+
+    public Class<? extends Account> getgrade() {
+        return null;
+    }
+
+    public Class<? extends Account> getstno() {
+        return null;
+    }
+
+    public String Class() {
+        return null;
+    }
+
+    public String grade() {
+        return null;
+    }
+
+    public String stno() {
         return null;
     }
 

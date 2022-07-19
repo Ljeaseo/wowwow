@@ -20,20 +20,40 @@ public class Study_exTest_01 {
                 System.out.println("==학과 등록==");
                 System.out.print("전공입력>>");
                 st.Class=sc.next();
-                System.out.println("학년입력>>");
+                System.out.print("학년입력>>");
                 st.grade=sc.nextInt();
-                System.out.println("학생수 입력>>");
+                System.out.print("학생수 입력>>");
                 st.stno=sc.nextInt();
 
-                for(int i =0; i < accountArray.length; i++ )
+                for(int i =0; i < accountArray.length; i++ ){
+                    if(accountArray[i] == null){
+                        accountArray[i] = new Account(st.Class,st.grade,st.stno);
+                        System.out.println("학과 등록을 완료하였습니다.");
+                    }
+                    break;
+                }
             }else if(select == 2){
                 //학생수가 많은 순서대로 학과 나열
+                System.out.println("=====학과목록=====");
+                for(int i = 0; i < accountArray.length; i++){
+                    if(accountArray[i] == null){
+                        System.out.println("등록된 학과가 없습니다.");
+                        break;
+                    }
+                    System.out.println(
+                        accountArray[i].Class()+"/t"+
+                        accountArray[i].grade()+"/t"+
+                        accountArray[i].stno()
+                        );
+                    }
+                   
             }else if(select == 3){
+
                 //프로그램 종료
                 play=false;
             }
         }
     }
-
-
 }
+
+
