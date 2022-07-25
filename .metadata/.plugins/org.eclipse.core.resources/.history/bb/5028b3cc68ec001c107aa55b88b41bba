@@ -1,6 +1,0 @@
-@charset "UTF-8";
-
-p {
-	font-family: 'IBM Plex Sans KR', sans-serif;
-	font-family: 'Montserrat', sans-serif;
-}

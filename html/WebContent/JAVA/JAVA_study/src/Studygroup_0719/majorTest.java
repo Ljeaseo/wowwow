@@ -6,7 +6,8 @@ public class majorTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<major> arr = new ArrayList<major>();
-
+        
+        major mj = new major();
         
         boolean play = true;
 
@@ -26,7 +27,6 @@ public class majorTest {
                     System.out.print("학생수 입력>>");
                     int stno = sc.nextInt();
 
-                    major mj = new major();
                     arr.add(mj);
                 }else if(choice == 2){
                     if(arr.size()!=0){

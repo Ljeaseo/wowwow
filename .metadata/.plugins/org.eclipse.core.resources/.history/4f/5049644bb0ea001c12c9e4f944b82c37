@@ -1,6 +1,0 @@
-@charset "UTF-8";
-
-#h01{
-	style-opacity: 0.5;
-    color: blue;
-}
