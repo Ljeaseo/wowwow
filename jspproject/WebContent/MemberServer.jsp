@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTP-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <%@ page import="javax.sql.*" %>
@@ -8,20 +8,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-</head>
-<body>
 <%
-	// loginForm.jsp에 있는 데이터 수집
-	String id=request.getParameter("id"); // request 요청
-	String pw=request.getParameter("pw");
- 	
-	System.out.println(id);
-	System.out.println(pw);
-
-	//DB연결
-	Connection conn=null;
+    // 사용자가 회원가임폼에서 입력한 값을 각각의 id,pw,addr 변수에 저장
+    String id = request.getParameter("id");
+    String pw = request.getParameter("pw");
+    String addr = request.getParameter("addr");
+    
+    //DB연결
+    Connection conn=null;
 	PreparedStatement pstmt=null;
-    ResultSet rs=null;
+  
 	
 	try{
 		Context init = new InitialContext();
@@ -29,47 +25,45 @@
 		conn = ds.getConnection();
 		
 		
-		//System.out.println("DB연결 성공");
-		//Login을 하기위한 sql문장
+	
+		//회원가입을 하기위한 sql문장
 		//prepareStatement : java -> DB에 쿼리를 보내기 위해 사용하는 객체
-		pstmt=conn.prepareStatement("select * from member where id=? and password=?"); 
+		pstmt=conn.prepareStatement("insert into member (id, password, addr) values (?,?,?)");
 		//첫번째 물음표에는 사용자가 입력한 id값(String id=request.getParameter("id"); )을 설정
 		pstmt.setString(1,id);
 		//두번쨰 물음표에는 사용자가 입력한 password값(String pw=request.getParameter("pw");)을 설정
 		pstmt.setString(2,pw);
+		//세번째 물음표에는 사용자가 입력한 address값(String addr=request.getParameter("addr");)을 설정
+		pstmt.setString(3,addr);
 		//위 SQL문장을 실행(workdench : ctrl+enter)
+		// insert가 되었으면 1의 값을 result변수에 저장되고, insert가 되지 않았으면 0의 값을 result변수에 저장.
+		int result=pstmt.executeUpdate();
 		// executeQuery() :  select (select 된 결과를 ResultSet라는 공간에 저장해서 반환)
 		// executeUpdate() :  insert,update,delete ()
-		rs=pstmt.executeQuery();
-        
 		
 		
-		if(rs.next()){ 
-			//resultSet 에 데이터가 있으면 Login을 해라.
-			// session영역에 id값을 유지시킴으로 로그인 된채로 서비스를 이용
-			session.setAttribute("id",id);
-			// 로그인이 된채로 메인페이지로 이동해라.
-			out.println("<script>");
-			out.println("location.href='main.jsp'");
+	    if(result!=0){
+	    //insert가 되었으면 (회원가입이 되었으면) 로그인 화면으로 이동
+	    	out.println("<script>");
+			out.println("location.href='loginFrom.jsp'");
 			out.println("</script>");
-		}else{ 
-			//그렇지 않으면 LoginForm 화면으로 이동
-			out.println("<script>");
-			out.println("location.href='loginForm.jsp'");
+	    }else{
+	    // 그렇지 않으면 회원가입회원으로 이동
+	    	out.println("<script>");
+			out.println("location.href='member.jsp'");
 			out.println("</script>");
-		}
-	
-	
+	    }
 	
 	}catch(Exception e){
 		//System.out.println("DB연결 실패");
 		e.printStackTrace();
 	}finally{
 		conn.close();   // 메모리 관리 사용을 끝내면 닫아주기.
-		rs.close();
 		pstmt.close();
 	}
 %>
+</head>
+<body>
 
 </body>
 </html>

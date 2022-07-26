@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,10 @@
 		<td><input type ="password" name="pw"></td>
 	</tr>
 	<tr>
-		<td><input type="submit" value ="로그인"></td>
+		<td colspan="2">
+		<input type="submit" value ="로그인">
+		<a href="member.jsp">회원가입</a>  
+		</td>
 	</tr>
 </table>
 </form>
