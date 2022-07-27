@@ -8,7 +8,7 @@
 </head>
 <body>
 메인입니다.
-<a href="Board.jsp">글쓰기</a>
-<a href="BoardList.jsp">게시판</a>
+<a href="boardwrite.jsp">글쓰기</a>
+<a href="boardlist.jsp">게시판</a>
 </body>
 </html>

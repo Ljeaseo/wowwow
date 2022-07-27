@@ -13,7 +13,7 @@
 <h1>게시판 목록</h1>
 <table border="1">
     <tr>
-        <td>bno</td><td>제목</td><td>내용</td><td>작성일자</td><td>조회수</td><td>아이디</td>
+        <td>No.</td><td>제목</td><td>작성일자</td><td>조회수</td><td>아이디</td>
     </tr>
    <% 
  //DB연결
@@ -31,22 +31,21 @@
  		
  		//prepareStatement : java -> DB에 쿼리를 보내기 위해 사용하는 객체
  		pstmt=conn.prepareStatement("select * from board"); 
- 		
+ 		 
  		//위 SQL문장을 실행(workdench : ctrl+enter)
  		// executeQuery() :  select (select 된 결과를 ResultSet라는 공간에 저장해서 반환)
  		// executeUpdate() :  insert,update,delete ()
  		rs=pstmt.executeQuery();
        
- 		while(rs.next()){ 
+ 		while(rs.next()){ // rs.next -> 다음칸으로 내려가라.
    %>
-            <tr>
-            <td><%=rs.getString("bno") %></td>
-            <td><a href="BoardPage.jsp"><%=rs.getString("title") %></a></td>
-            <td><%=rs.getString("content") %></td>
-            <td><%=rs.getString("regdate") %></td>
-            <td><%=rs.getString("cnt") %></td>
-            <td><%=session.getAttribute("id") %></td>
-            </tr>
+    <tr>
+        <td><%=rs.getString("bno") %></td>
+        <td><a href="boarddetail.jsp?bno=<%=rs.getString("bno")%>"><%=rs.getString("title") %></a></td>         
+        <td><%=rs.getString("regdate") %></td>
+        <td><%=rs.getString("cnt") %></td> 
+        <td><%=rs.getString("id") %></td>
+    </tr>
    <%
             
 		}
