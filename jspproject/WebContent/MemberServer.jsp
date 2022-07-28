@@ -45,7 +45,7 @@
 	    if(result!=0){
 	    //insert가 되었으면 (회원가입이 되었으면) 로그인 화면으로 이동
 	    	out.println("<script>");
-			out.println("location.href='loginFrom.jsp'");
+			out.println("location.href='loginForm.jsp'");
 			out.println("</script>");
 	    }else{
 	    // 그렇지 않으면 회원가입회원으로 이동

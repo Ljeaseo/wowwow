@@ -9,6 +9,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <% 
+//한글 깨짐방지
+request.setCharacterEncoding("UTF-8");
 // 사용자가 게시판에 필요한 제목과 내용을 title,content 변수에 저장
 String title = request.getParameter("title");
 String content = request.getParameter("content");
@@ -46,6 +48,7 @@ try{
 	
 	
     if(result!=0){
+    	
     //insert가 되었으면 (글쓰기가 완료 되었으면) 게시판 목록 화면으로 이동
     	out.println("<script>");        
 		out.println("location.href='boardlist.jsp'");

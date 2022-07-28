@@ -16,7 +16,7 @@
     <table border="1">
 <%
     int bno=Integer.parseInt(request.getParameter("bno")); // Interger.parseInt -> String 형변환
-
+   
     
 	//DB연결
 	Connection conn=null;
@@ -51,14 +51,15 @@
             <td>내용</td>
             <td><%=rs.getString("content") %></td>
         </tr>
+    
         <tr>
             <td colspan="2">
-            <a href="boardmodify.jsp?bno=<%=rs.getString("bno")%>">게시글 수정</a>
+            <a href="boardmodify.jsp?bno=<%=rs.getInt("bno")%>">게시글 수정</a>
             </td>
         </tr>
-            
-      <%
-		}
+       <%
+      
+	}
 	}catch(Exception e){
 		//System.out.println("DB연결 실패");
 		e.printStackTrace();
@@ -68,6 +69,7 @@
 		pstmt.close();
 	}
 %>
+      
     </table>
     
 </body>

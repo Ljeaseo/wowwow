@@ -11,11 +11,14 @@
 </head>
 <body>
 <h1>게시판 목록</h1>
+<a href="main.jsp">메인화면 이동</a>
+
 <table border="1">
     <tr>
         <td>No.</td><td>제목</td><td>작성일자</td><td>조회수</td><td>아이디</td>
     </tr>
    <% 
+
  //DB연결
  	Connection conn=null;
  	PreparedStatement pstmt=null;
@@ -61,5 +64,6 @@
    %>
    
 </table>
+<a href="boardwrite.jsp">글쓰기</a>
 </body>
 </html>

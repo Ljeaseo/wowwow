@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <% 
-// 사용자가 게시판에 필요한 제목과 내용을 title,content 변수에 저장
+// 사용자가 게시판에 필요한 제목과 내용을 title,content 변수에 저장  (데이터 수집)
 String title = request.getParameter("title");
 String content = request.getParameter("content");
 int bno=Integer.parseInt(request.getParameter("bno"));
@@ -27,14 +27,14 @@ try{
 	
 
 	//sql문장 처리
-	pstmt=conn.prepareStatement("update board set title=?,content=? where bno=2");
+	pstmt=conn.prepareStatement("update board set title=?,content=? where bno=?");
 	
 	
 	//첫번째 물음표에는 사용자가 입력한 title을 설정
 	pstmt.setString(1,title);
 	//두번쨰 물음표에는 사용자가 입력한 content을 설정
 	pstmt.setString(2,content);
-	//세번째 물음표에서는 로그인할때의 입력한 id을 설정
+	//세번째 물음표에서는 bno을 설정
 	pstmt.setInt(3,bno);
 	
 	//위 SQL문장을 실행(workdench : ctrl+enter)

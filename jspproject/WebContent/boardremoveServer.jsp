@@ -10,9 +10,8 @@
 <title>Insert title here</title>
 <% 
 // 데이터수집
-String title = request.getParameter("title");
-String content = request.getParameter("content");
 
+int bno=Integer.parseInt(request.getParameter("bno"));
 
 //DB연결
 Connection conn=null;
@@ -31,9 +30,9 @@ try{
 	
 	
 	//첫번째 물음표에는 사용자가 입력한 title을 설정
-	pstmt.setString(1,title);
+	pstmt.setInt(1,bno);
 	//두번쨰 물음표에는 사용자가 입력한 content을 설정
-	pstmt.setString(2,content);
+	
 	//세번째 물음표에서는 로그인할때의 입력한 id을 설정
 	
 	
