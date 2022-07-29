@@ -19,22 +19,21 @@
         <td>내용</td>
         <td><textarea name="content" cols="22px" rows="10px"></textarea></td>
     </tr>
-<%--    
+<%
+
     if(session.getAttribute("id") != null){
+%>   
 
 	<tr>
         <td colspan=2><input type="submit" value="글쓰기"></td>
     </tr>
+<% 
 
     }
---%>
+%>
 
-<%-- JSTL로 if문 실행 --%>
-    <tr>
-        <c:if test="${id != null}">
-        <td colspan=2><input type="submit" value="글쓰기"></td>
-        </c:if>
-    </tr>
+
+  
 </table>
 </form>
 </body>

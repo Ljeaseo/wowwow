@@ -1,7 +1,2 @@
 INDEX VERSION 1.4+C:\Users\GreenArt\Desktop\wowwow\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1439859847.index
-1447628727.index
-3135461914.index
 138873766.index
-1556582855.index
-1131727492.index
